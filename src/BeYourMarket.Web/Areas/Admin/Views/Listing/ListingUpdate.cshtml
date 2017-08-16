@@ -206,7 +206,6 @@
 </div>
 
 @section Scripts {
-    <script src="https://maps.googleapis.com/maps/api/js?signed_in=true&libraries=places&callback=initMap" async defer></script>
     @Scripts.Render("~/bundles/jqueryval")
     <script src="~/Scripts/fileinput.min.js"></script>
     @Html.Partial("_LocalizationFileInput")
@@ -440,5 +439,8 @@
             map.setCenter(options.position);
         }        
     </script>
+
+    <script src="https://maps.googleapis.com/maps/api/js?signed_in=true&libraries=places&callback=initMap" async defer></script>
+
 }
 
